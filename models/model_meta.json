@@ -1,0 +1,33 @@
+{
+  "model_name": "LightGBM",
+  "features": [
+    "Size",
+    "Bedrooms",
+    "Bathrooms",
+    "Property_Age",
+    "Condition_Score",
+    "Location_Encoded",
+    "Total_Rooms",
+    "Sale_Year",
+    "Sale_Month",
+    "Is_New_Condition",
+    "Is_Small_Property"
+  ],
+  "r2_validation": 0.9606,
+  "mae_validation": 33714.0,
+  "cv_r2_mean": 0.9552,
+  "cv_r2_std": 0.0005,
+  "city_price_map": {
+    "CityA": 490390,
+    "CityB": 576302,
+    "CityC": 440601,
+    "CityD": 357595
+  },
+  "condition_map": {
+    "Poor": 1,
+    "Fair": 2,
+    "Good": 3,
+    "New": 4
+  },
+  "target_transform": "log1p"
+}
